@@ -7,15 +7,17 @@ pipelineJob(project_name) {
         triggers {
             scm('H/1 * * * *')
         }
-        scm {
-            git {
-                remote {
-                    name(repo_name)
-                    url(repo)
+        cpsScm {
+            scm {
+                git {
+                    remote {
+                        name(repo_name)
+                        url(repo)
+                    }
                 }
+                scriptPath("Jenkinsfile")
             }
-            scriptPath("Jenkinsfile")
         }
-     }
+    }
 }
 
