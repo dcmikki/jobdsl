@@ -9,7 +9,7 @@ pipelineJob(project_name) {
 			scm('H/1 * * * *')
 		}
 		
-		scpScm {
+		spsScm {
 			scm {
 				git {
 					remote {
