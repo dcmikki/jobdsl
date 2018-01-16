@@ -5,11 +5,11 @@ repo_name = "repo"
 
 pipelineJob(project_name) {
 	definition {
-		triggers {
+		triggers{
 			scm('H/1 * * * *')
 		}
 		
-		spsScm {
+		spsScm{
 			scm {
 				git {
 					remote {
@@ -18,6 +18,7 @@ pipelineJob(project_name) {
 					}
 				}
 				scriptPath("Jenkinsfile")
+			
 			}
 		}
 	}
