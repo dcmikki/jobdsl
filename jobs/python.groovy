@@ -1,6 +1,6 @@
 project_name = "jenkins-pipeline-python"
 repo = "git@github.com:dcmikki/jenkins-holamundo.git"
-repo_name = "repo"
+repo_name = ""
 
 pipelineJob(project_name) {
     definition {
@@ -11,7 +11,7 @@ pipelineJob(project_name) {
             scm {
                 git {
                     remote {
-                        name(repo_name)
+                        name()
                         url(repo)
                     }
                 }
