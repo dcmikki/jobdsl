@@ -8,7 +8,7 @@ pipelineJob(project_name) {
         triggers {
             scm('H/1 * * * *')
         }
-        spsScm {
+        cpsScm {
             scm {
                 git {
                     remote {
